@@ -1,0 +1,24 @@
+#
+# These things are run when an Openbox X Session is started.
+# You may place a similar script in $HOME/.config/openbox/autostart
+# to run user-specific things.
+#
+
+# Mouse constant deceleration
+xinput set-prop 9 262 1
+
+# Mouse adaptive deceleration
+xinput set-prop 9 263 5
+
+# Mouse velocity scaling (1000 / update frequency)
+xinput set-prop 9 264 1
+
+# Desktop
+hsetroot -cover "$HOME/.wallpaper"
+compton --config ~/.config/compton.conf -b &
+tint2 &
+pcmanfm -d &
+
+# Applications
+keepassx &
+linphone

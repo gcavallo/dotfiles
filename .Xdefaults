@@ -1,0 +1,77 @@
+!! colors
+*background: #6a2a56
+*foreground: #d0d0d0
+
+!! black dark/light
+*color0: #6a2a56
+*color8: #885477
+
+!! red dark/light
+*color1: #aa3c6c
+*color9: #bb6389
+
+!! green dark/light
+*color2: #2a99a5
+*color10: #54adb7
+
+!! yellow dark/light
+*color3: #ed924c
+*color11: #f1a76f
+
+!! blue dark/light
+*color4: #7c54a5
+*color12: #9676b7
+
+!! magenta dark/light
+*color5: #bd3cac
+*color13: #ca62bc
+
+!! cyan dark/light
+*color6: #73a7d3
+*color14: #8ebadc
+
+!! white dark/light
+*color7: #c8bcc3
+*color15: #d3c9cf
+
+!! scrollbar style : rxvt (default), plain (most compact), next, or xterm
+URxvt*scrollstyle: plain
+URxvt*scrollBar: false
+URxvt*scrollBar_right: true
+URxvt*scrollColor: #839191
+URxvt*saveLines: 12000
+
+!! True transparency
+URxvt*depth: 32
+URxvt*background: [95]#6a2a56
+
+!! Fake transparency
+!URxvt*shading: 10 
+!URxvt*depth: 24
+!URxvt*transparent: true
+
+!! cursor
+*cursorBlink: true
+*cursorColor: #9676b7
+*highlightColor: #73a7d3
+*highlightTextColor: #885477
+
+!! fonts
+URxvt*font: xft:Droid Sans Mono:pixelsize=12,\
+
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintmedium
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+
+!! extentions
+!URxvt*perl-ext-common: tabbed,matcher
+!URxvt.tabbed.tabbar-fg:0
+!URxvt.tabbed.tabbar-bg:6
+!URxvt.tabbed.tab-fg:0
+!URxvt.tabbed.tab-bg:7
+!URxvt*url-launcher: /usr/bin/iceweasel
+!URxvt*matcher.button: 1
+!URxvt*colorUL: 12
