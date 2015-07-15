@@ -1,10 +1,10 @@
 !! colors
-*background: #6a2a56
+*background: #1a2029
 *foreground: #d0d0d0
 
 !! black dark/light
-*color0: #6a2a56
-*color8: #885477
+*color0: #3a3f48
+*color8: #4a4f58
 
 !! red dark/light
 *color1: #aa3c6c
@@ -38,12 +38,12 @@
 URxvt*scrollstyle: plain
 URxvt*scrollBar: false
 URxvt*scrollBar_right: true
-URxvt*scrollColor: #839191
+URxvt*scrollColor: #3a3f48
 URxvt*saveLines: 12000
 
 !! True transparency
 URxvt*depth: 32
-URxvt*background: [95]#6a2a56
+URxvt*background: [95]#1a2029
 
 !! Fake transparency
 !URxvt*shading: 10 
@@ -52,26 +52,17 @@ URxvt*background: [95]#6a2a56
 
 !! cursor
 *cursorBlink: true
-*cursorColor: #9676b7
+*cursorColor: #3a3f48
 *highlightColor: #73a7d3
-*highlightTextColor: #885477
+*highlightTextColor: #3a3f48
 
 !! fonts
-URxvt*font: xft:Droid Sans Mono:pixelsize=12,\
+URxvt*font: xft:Droid Sans Mono:pixelsize=12
+URxvt*lineSpace: 1
 
-Xft.autohint: 0
+Xft.autohint: false
 Xft.lcdfilter: lcddefault
 Xft.hintstyle: hintslight
-Xft.hinting: 1
-Xft.antialias: 1
+Xft.hinting: true
+Xft.antialias: true
 Xft.rgba: rgb
-
-!! extentions
-!URxvt*perl-ext-common: tabbed,matcher
-!URxvt.tabbed.tabbar-fg:0
-!URxvt.tabbed.tabbar-bg:6
-!URxvt.tabbed.tab-fg:0
-!URxvt.tabbed.tab-bg:7
-!URxvt*url-launcher: /usr/bin/iceweasel
-!URxvt*matcher.button: 1
-!URxvt*colorUL: 12
