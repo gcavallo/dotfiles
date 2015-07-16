@@ -80,11 +80,10 @@ systray_icon_size = 16
 systray_icon_asb = 70 0 0
 
 # Clock
-time1_format = %Y-%m-%d   %H:%M
+time1_format = %H:%M
 time1_font = 'Droid Sans' 9
-#time2_format = %A %d %B
-#time2_font = 'Droid Sans Mono' 6
 clock_font_color = #d0d0d0 95
+clock_tooltip = %A %B %d
 clock_padding = 1 0
 clock_background_id = 0
 clock_rclick_command = orage
