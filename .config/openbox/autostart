@@ -14,7 +14,11 @@ xinput set-prop 9 263 5
 xinput set-prop 9 264 1
 
 # Desktop
-hsetroot -cover "$HOME/.wallpaper"
+while true; do
+	hsetroot -cover "$HOME/.wallpaper"
+	sleep 5s
+done &
+
 compton --config ~/.config/compton.conf -b &
 tint2 &
 pcmanfm -d &
