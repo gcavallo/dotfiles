@@ -31,8 +31,8 @@
 *color14: #8ebadc
 
 !! white dark/light
-*color7: #c8bcc3
-*color15: #d3c9cf
+*color7: #b8b8b8
+*color15: #d0d0d0
 
 !! scrollbar style : rxvt (default), plain (most compact), next, or xterm
 URxvt*scrollstyle: plain
