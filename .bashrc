@@ -71,6 +71,7 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 
 alias ll='ls -alh'
 alias sudo='sudo '
+alias vi='vim'
 alias lsblk='lsblk -o NAME,TYPE,KNAME,FSTYPE,MOUNTPOINT,LABEL,UUID,OWNER,GROUP,MODE,TYPE,SIZE'
 
 if [ -f ~/.bash_aliases ]; then
