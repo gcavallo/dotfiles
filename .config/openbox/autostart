@@ -4,24 +4,8 @@
 # to run user-specific things.
 #
 
-# Mouse constant deceleration
-xinput set-prop 9 262 1
-
-# Mouse adaptive deceleration
-xinput set-prop 9 263 5
-
-# Mouse velocity scaling (1000 / update frequency)
-xinput set-prop 9 264 1
-
-# Desktop
-while true; do
-	hsetroot -cover "$HOME/.wallpaper"
-	sleep 5s
-done &
-
-compton --config ~/.config/compton.conf -b &
+# Panel
 tint2 &
-pcmanfm -d &
 
 # Applications
 keepassx &
