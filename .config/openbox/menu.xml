@@ -13,10 +13,10 @@
     <action name="Execute"><execute>pcmanfm</execute></action>
   </item>
   <item label="Web Browser">
-    <action name="Execute"><execute>iceweasel</execute></action>
+    <action name="Execute"><execute>firefox</execute></action>
   </item>
   <item label="Email CLient">
-    <action name="Execute"><execute>icedove</execute></action>
+    <action name="Execute"><execute>thunderbird</execute></action>
   </item>
   <item label="Music Player">
     <action name="Execute"><execute>urxvt -e cmus</execute></action>
