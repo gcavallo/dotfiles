@@ -28,13 +28,3 @@ set path=$PWD/**
 
 " Disable .viminfo file
 set viminfo=
-
-" Set window title on terminal emulators
-let &titlestring = "VIM [" . expand("%:t") . "@" . hostname() . "]"
-if &term == "screen"
-	set t_ts=^[k
-	set t_fs=^[\
-endif
-if &term == "screen" || &term == "xterm"
-	set title
-endif
