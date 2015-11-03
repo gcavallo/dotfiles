@@ -1,60 +1,52 @@
-!! colors
-*background: #1a2029
-*foreground: #d0d0d0
-
 !! black dark/light
-*color0: #3a3f48
-*color8: #4a4f58
+*color0: #114c69
+*color8: #16678c
 
 !! red dark/light
-*color1: #aa3c6c
-*color9: #bb6389
+*color1: #8c315a
+*color9: #be427c
 
 !! green dark/light
-*color2: #2a99a5
-*color10: #54adb7
+*color2: #348c7c
+*color10: #47bea8
 
 !! yellow dark/light
-*color3: #ed924c
-*color11: #f1a76f
+*color3: #8c7d34
+*color11: #b49e43
 
 !! blue dark/light
-*color4: #7c54a5
-*color12: #9676b7
+*color4: #68478c
+*color12: #8c60be
 
 !! magenta dark/light
-*color5: #bd3cac
-*color13: #ca62bc
+*color5: #8c2c82
+*color13: #be3bb1
 
 !! cyan dark/light
-*color6: #73a7d3
-*color14: #8ebadc
+*color6: #5a778c
+*color14: #7aa2be
 
 !! white dark/light
-*color7: #b8b8b8
-*color15: #d0d0d0
+*color7: #8c8c8c
+*color15: #bebebe
+
+!! True transparency
+URxvt*depth: 32
+URxvt*background: [90]#131926
+URxvt*foreground: #b5b8be
 
 !! scrollbar style : rxvt (default), plain (most compact), next, or xterm
 URxvt*scrollstyle: plain
 URxvt*scrollBar: false
 URxvt*scrollBar_right: true
-URxvt*scrollColor: #3a3f48
+URxvt*scrollColor: #114c69
 URxvt*saveLines: 12000
-
-!! True transparency
-URxvt*depth: 32
-URxvt*background: [95]#1a2029
-
-!! Fake transparency
-!URxvt*shading: 10 
-!URxvt*depth: 24
-!URxvt*transparent: true
 
 !! cursor
 *cursorBlink: true
-*cursorColor: #3a3f48
-*highlightColor: #73a7d3
-*highlightTextColor: #3a3f48
+*cursorColor: #114c69
+*highlightColor: #114c69
+*highlightTextColor: #b5b8be
 
 !! fonts
 URxvt*font: xft:Droid Sans Mono:pixelsize=12
