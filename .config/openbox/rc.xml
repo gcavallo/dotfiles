@@ -116,7 +116,7 @@
       A  Alt key
       W  Super key (Usually bound to the Windows key on keyboards which have one)
       M  Meta key
-      H  Hyper key (If it is bound to something) 
+      H  Hyper key (If it is bound to something)
     -->
     <chainQuitKey>C-g</chainQuitKey>
     <!-- Keybindings for desktop switching -->
@@ -649,12 +649,6 @@
     <manageDesktops>yes</manageDesktops>
   </menu>
   <applications>
-    <application name="geany">
-      <desktop>1</desktop>
-    </application>
-    <application name="pcmanfm">
-      <desktop>1</desktop>
-    </application>
     <application name="Navigator">
       <desktop>3</desktop>
     </application>
@@ -662,9 +656,6 @@
       <desktop>3</desktop>
     </application>
     <application name="keepassx">
-      <desktop>3</desktop>
-    </application>
-    <application name="hexchat">
       <desktop>3</desktop>
     </application>
     <application name="linphone">
