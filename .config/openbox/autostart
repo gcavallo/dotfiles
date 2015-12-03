@@ -4,7 +4,8 @@
 # to run user-specific things.
 #
 
-# Panel
+# Desktop
+spacefm -d --desktop &
 tint2 &
 
 # Applications

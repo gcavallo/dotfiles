@@ -12,3 +12,4 @@ fi
 
 export WINEARCH="win32"
 export WINEPREFIX="$HOME/.win32"
+export SDL_AUDIODRIVER="alsa"
