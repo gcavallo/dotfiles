@@ -17,10 +17,8 @@ if [ -n "$force_color_prompt" ]; then
 	fi
 fi
 
-DN=$(hostname -d)
-
 if [ "$color_prompt" = yes ]; then
-	PS1='\[\e[01;32m\]\u\[\e[01;30m\]@\[\e[01;33m\]\h\[\e[01;30m\].\[$DN\]\[\e[00m\]\n\[\e[01;34m\]\w\[\e[01;30m\]\$\[\e[00m\] '
+	PS1='\[\e[01;32m\]\u\[\e[01;30m\]@\[\e[01;33m\]\h\[\e[01;30m\]\[\e[00m\]\n\[\e[01;34m\]\w\[\e[01;30m\]\$\[\e[00m\] '
 else
     PS1='\u@\h:\w\$ '
 fi
