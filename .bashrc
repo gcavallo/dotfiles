@@ -20,9 +20,12 @@ fi
 if [ "$color_prompt" = yes ]; then
 	PS1='\[\e[01;32m\]\u\[\e[01;30m\]@\[\e[01;33m\]\h\[\e[01;30m\]\[\e[00m\]\n\[\e[01;34m\]\w\[\e[01;30m\]\$\[\e[00m\] '
 else
-    PS1='\u@\h:\w\$ '
+	PS1='\u@\h:\w\$ '
 fi
 unset color_prompt force_color_prompt
+
+BASE16_SHELL="$HOME/.config/base16-shell/base16-ocean.dark.sh"
+[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 case "$TERM" in
 	xterm*|rxvt*)
