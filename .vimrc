@@ -1,11 +1,10 @@
 " No rice, no life
 set encoding=utf8
-set t_Co=16
+set t_Co=256
+let base16colorspace=256  " Access colors present in 256 colorspace
 syntax on
 set background=dark
-hi NonText ctermfg=DarkGray
-hi SpecialKey ctermfg=DarkGray
-hi LineNr ctermfg=DarkGray
+colorscheme base16-ocean
 
 " Invisible characters
 set number!
@@ -21,7 +20,7 @@ set tabstop=4
 " Use mouse and primary clipboard
 set mouse=a
 set clipboard=unnamedplus
-:vmap <C-C> "+y
+vmap <C-C> "+y
 
 " Set path to current directory recursively
 set path=$PWD/**
