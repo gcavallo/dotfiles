@@ -1,18 +1,17 @@
 My GNU/Linux desktop dotfiles
 =============================
 
-Minimal hardware accelerated openbox desktop.
+![Screenshot](screenshot.png)
 
 Configured packages
 -------------------
 
 * bash
-* openbox
-* tint2
-* compton
-* rxvt-unicode
-* vim
 * mpv
+* vim
+* xfce4-panel
+* xfce4-terminal
+* xterm
 
 License
 -------
