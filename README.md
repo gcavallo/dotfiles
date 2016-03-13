@@ -7,6 +7,7 @@ Configured packages
 -------------------
 
 * bash
+* geany
 * mpv
 * vim
 * xfce4-panel
