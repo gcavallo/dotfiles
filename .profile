@@ -11,5 +11,5 @@ if [ -d "$HOME/.local/bin" ]; then
 fi
 
 export WINEARCH="win32"
-export WINEPREFIX="$HOME/.win32"
+export WINEPREFIX="$HOME/Windows"
 export TERM="xfce4-terminal"
