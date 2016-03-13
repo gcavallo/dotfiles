@@ -1,0 +1,27 @@
+loc_name=Montréal (06), Québec
+lat=45.550585
+lon=-73.602232
+msl=54
+timezone=America/Toronto
+cache_file_max_age=172800
+power_saving=true
+units_temperature=0
+units_pressure=0
+units_windspeed=0
+units_precipitation=0
+units_altitude=0
+model_apparent_temperature=0
+round=true
+single_row=true
+tooltip_style=0
+forecast_layout=1
+forecast_days=5
+scrollbox_animate=true
+theme_dir=/usr/share/xfce4/weather/icons/simplistic
+show_scrollbox=false
+scrollbox_lines=1
+scrollbox_color=#000000000000
+scrollbox_use_color=false
+label0=3
+label1=5
+
