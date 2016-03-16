@@ -19,8 +19,17 @@ alias lsblk='lsblk -o NAME,TYPE,KNAME,FSTYPE,MOUNTPOINT,LABEL,UUID,OWNER,GROUP,M
 alias 7zp='7za a -t7z -m0=lzma2 -mx=9 -mhe=on -p'
 alias killff='killall ffxivlauncher.exe'
 
+colors () {
+	# Echo a line of terminal colors
+	echo ""
+	for i in {30..37}; do
+		echo -ne "\e[0;${i}m████\e[1;${i}m████\e[0m"
+	done
+	echo -e "\n"
+}
+
 serversslfp () {
-	# Get server SSL certificate fingerprint in MD5, SHA1 and SHA256.
+	# Get server SSL certificate fingerprint in MD5, SHA1 and SHA256
 	openssl s_client -connect $1 < /dev/null 2>/dev/null | openssl x509 -fingerprint -md5 -noout -in /dev/stdin
 	sleep 1
 	openssl s_client -connect $1 < /dev/null 2>/dev/null | openssl x509 -fingerprint -sha1 -noout -in /dev/stdin
@@ -29,8 +38,8 @@ serversslfp () {
 }
 
 backup () {
-	# Backup given directories to /mnt/backup.
-	for dir in "$@"; do
+	# Backup given directories to /mnt/backup
+	for dir in "$"; do
 		rsync -aXq --delete --delete-excluded --exclude-from="/etc/rsync-excludes.txt" "$(realpath "$dir")" /mnt/backup
 	done
 }
