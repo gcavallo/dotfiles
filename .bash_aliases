@@ -39,7 +39,7 @@ serversslfp () {
 
 backup () {
 	# Backup given directories to /mnt/backup
-	for dir in "$"; do
+	for dir in "$@"; do
 		rsync -aXq --delete --delete-excluded --exclude-from="/etc/rsync-excludes.txt" "$(realpath "$dir")" /mnt/backup
 	done
 }
