@@ -1,0 +1,8 @@
+[user]
+	name = Gabriel Cavallo
+	email = gabrielcavallo@mail.com
+	signingkey = 0xB86ABF546A4A0732
+[push]
+	default = simple
+[color]
+	ui = auto
