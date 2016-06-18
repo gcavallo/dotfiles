@@ -7,7 +7,7 @@
 
 <menu id="root-menu" label="Openbox 3">
   <item label="Terminal Emulator">
-    <action name="Execute"><execute>xfce4-terminal --tab</execute></action>
+    <action name="Execute"><execute>sakura</execute></action>
   </item>
   <item label="File Manager">
     <action name="Execute"><execute>pcmanfm</execute></action>
@@ -22,7 +22,7 @@
     <action name="Execute"><execute>pidgin</execute></action>
   </item>
   <item label="Music Player">
-    <action name="Execute"><execute>xfce4-terminal --tab -x cmus</execute></action>
+    <action name="Execute"><execute>sakura -x cmus</execute></action>
   </item>
   <item label="Softphone">
     <action name="Execute"><execute>linphone</execute></action>
