@@ -5,6 +5,8 @@ let base16colorspace=256  " Access colors present in 256 colorspace
 syntax on
 set background=dark
 colorscheme base16-ocean
+highlight Normal ctermbg=NONE
+highlight nonText ctermbg=NONE
 
 " Invisible characters
 set number!
@@ -19,7 +21,6 @@ set tabstop=4
 
 " Use mouse and primary clipboard
 set mouse=a
-set clipboard=unnamedplus
 vmap <C-C> "+y
 
 " Set path to current directory recursively
