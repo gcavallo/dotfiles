@@ -15,6 +15,7 @@ Configured packages
 * pacaur
 * pacman
 * profile
+* sxiv
 * tint2
 * vim
 * xinit
