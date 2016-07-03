@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=FEH
+Name=feh
 Exec=feh-browser %f
 Terminal=false
 Type=Application
