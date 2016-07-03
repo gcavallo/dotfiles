@@ -7,12 +7,27 @@ Configured packages
 -------------------
 
 * bash
-* geany
+* feh
+* fontconfig
+* git
 * mpv
+* openbox
+* pacaur
+* pacman
+* profile
+* tint2
 * vim
-* xfce4-panel
-* xfce4-terminal
-* xterm
+* xinit
+
+Install
+-------
+
+	./stow <pkgname>
+
+Uninstall
+---------
+
+	./stow -D <pkgname>
 
 License
 -------
