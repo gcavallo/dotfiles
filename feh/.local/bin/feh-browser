@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 if [[ ! -f $1 ]]; then
 	echo "$0: first argument is not a file" >&2
