@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [[ ! -f $1 ]]; then
+	echo "$0: first argument is not a file" >&2
+	exit 1
+fi
+
+dir=$(dirname "$1")
+file=$(basename "$1")
+shift
+
+exec feh "$dir" "$@" --start-at "$dir/$file"

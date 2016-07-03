@@ -1,0 +1,4 @@
+action_0 0
+save_filelist
+toggle_fullscreen f F11 Return
+jump_random z space
