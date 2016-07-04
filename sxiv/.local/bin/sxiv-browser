@@ -7,20 +7,9 @@ fi
 
 img=$(realpath "$1")
 dir=$(dirname "$img")
-exp='.*\(jpe?g\|bmp\|png\|gif\)$'
+exp='.*\.\(jpe?g\|bmp\|png\|gif\)'
 
-unset a c i
-while IFS= read -r -u3 -d '' file; do
-	a[i]="$file"
-	if [[ "${a[i]}" == "$img" ]]; then
-		c=$(($i+1))
-	fi
-	((i++))
-done 3< <(find -L "$dir" -maxdepth 1 -type f -iregex $exp -print0 | sort -z)
-
-if [[ $c -gt 0 ]]; then
-	shift
-	exec sxiv -n "$c" -q "$@" "${a[@]}"
-else
-	exec sxiv -q "$@"
-fi
+find -L "$dir" -maxdepth 1 -type f \( -iregex "$exp" -o -samefile "$img" \) -print0 \
+	| sort -z \
+	| tee >(printf %s\\0 -n"$(fgrep -znm1 "$img" | cut -d: -f1)") \
+	| xargs -0 sxiv -q "${@:2}"
