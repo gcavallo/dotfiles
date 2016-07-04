@@ -12,4 +12,4 @@ exp='.*\.\(jpe?g\|bmp\|png\|gif\)'
 find -L "$dir" -maxdepth 1 -type f \( -iregex "$exp" -o -samefile "$img" \) -print0 \
 	| sort -z \
 	| tee >(printf %s\\0 -n"$(fgrep -znm1 "$img" | cut -d: -f1)") \
-	| xargs -0 sxiv -q "${@:2}"
+	| xargs -0s"$(getconf ARG_MAX)" sxiv -q "${@:2}"
