@@ -7,9 +7,12 @@ fi
 
 img=$(realpath "$1")
 dir=$(dirname "$img")
-exp='.*\.\(jpe?g\|bmp\|png\|gif\)'
+exp='.*\.(jpe?g|bmp|png|gif)'
 
-find -L "$dir" -maxdepth 1 -type f \( -iregex "$exp" -o -samefile "$img" \) -print0 \
-	| sort -z \
-	| tee >(printf %s\\0 -n"$(fgrep -znm1 "$img" | cut -d: -f1)") \
-	| xargs -0s"$(getconf ARG_MAX)" sxiv -q "${@:2}"
+declare -A idx
+while IFS= read -rd '' file; do
+	a[++i]=$file
+	idx[$file]=$i
+done < <(find -L "$dir" -maxdepth 1 -type f -regextype awk \( -iregex "$exp" -o -samefile "$img" \) -print0 | sort -z)
+
+sxiv -q -n ${idx[$img]} "${@:2}" -- "${a[@]}"
