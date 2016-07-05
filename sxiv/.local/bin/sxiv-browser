@@ -6,19 +6,18 @@ fi
 
 img=$(realpath "$1")
 dir=$(dirname "$img")
-exp='.*\.\(jpe?g\|bmp\|png\|gif\)'
+exp='.*\.(jpe?g|bmp|png|gif)'
 
 unset a c i
-while IFS= read -r -d '' file; do
+while IFS= read -rd '' file; do
 	a[i++]="$file"
 	if [[ "$file" == "$img" ]]; then
 		c=$i
 	fi
-done < <(find -L "$dir" -maxdepth 1 -type f -iregex $exp -print0 | sort -z)
+done < <(find -L "$dir" -maxdepth 1 -type f -regextype awk \( -iregex "$exp" -o -samefile "$img" \) -print0 | sort -z)
 
 if [[ $c -gt 0 ]]; then
-	shift
-	sxiv -q -n "$c" "$@" -- "${a[@]}" &>/dev/null &
+	sxiv -q -n "$c" "${@:2}" -- "${a[@]}" &>/dev/null
 else
 	sxiv -q -- "$@" &>/dev/null
 fi
