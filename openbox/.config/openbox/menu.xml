@@ -13,7 +13,7 @@
     <action name="Execute"><execute>pcmanfm</execute></action>
   </item>
   <item label="Web Browser">
-    <action name="Execute"><execute>chromium</execute></action>
+    <action name="Execute"><execute>firefox</execute></action>
   </item>
   <item label="Email Client">
     <action name="Execute"><execute>thunderbird</execute></action>
@@ -21,8 +21,8 @@
   <item label="Instant Messenger">
     <action name="Execute"><execute>pidgin</execute></action>
   </item>
-  <item label="Music Player">
-    <action name="Execute"><execute>sakura -x cmus</execute></action>
+  <item label="VIDEO GAMES">
+    <action name="Execute"><execute>steam</execute></action>
   </item>
   <item label="Softphone">
     <action name="Execute"><execute>linphone</execute></action>
