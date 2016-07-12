@@ -1,3 +1,4 @@
 ~/.fehbg &
-compton -CG --config /dev/null --backend glx --vsync none &
+nvidia-settings --load-config-only &
+compton --config ~/.config/compton.conf &
 exec openbox-session
