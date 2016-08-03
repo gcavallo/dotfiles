@@ -23,7 +23,7 @@ export WINEARCH="win32"
 export WINEPREFIX="$HOME/Windows"
 
 # QT
-QT_STYLE_OVERRIDE="GTK+"
+export QT_QPA_PLATFORMTHEME="qt5ct"
 
 # X at login
 [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
