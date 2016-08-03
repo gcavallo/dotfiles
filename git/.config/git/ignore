@@ -9,6 +9,7 @@
 # Linux
 ###############
 *~
+*.swp
 .directory
 .Trash-*
 lost+found
