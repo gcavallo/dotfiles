@@ -8,6 +8,11 @@ colorscheme base16-ocean
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE
 
+augroup HiglightTODO
+	autocmd!
+	autocmd WinEnter,VimEnter * :silent! call matchadd('Todo', 'TODO\|FIXME\|XXX', -1)
+augroup END
+
 " Invisible characters
 set number!
 set nocursorline
