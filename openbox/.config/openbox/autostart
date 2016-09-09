@@ -1,12 +1,7 @@
-#
-# These things are run when an Openbox X Session is started.
-# You may place a similar script in $HOME/.config/openbox/autostart
-# to run user-specific things.
-#
-
-# Desktop
+#!/usr/bin/env bash
 tint2 &
-
-# Applications
+killall dropbox &
+(sleep 15s && dropbox) &
+kleopatra --daemon &
 keepassx &
-linphone
+linphone &
