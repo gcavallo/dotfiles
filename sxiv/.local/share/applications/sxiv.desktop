@@ -1,9 +1,12 @@
+#!/usr/bin/env xdg-open
+
 [Desktop Entry]
-Name=sxiv
+Name=SXIV Browser
+TryExec=sxiv-browser
 Exec=sxiv-browser %f -ab -g 1024x768 -s f
 Terminal=false
 Type=Application
 Icon=image-viewer
 NoDisplay=true
-Categories=Graphics;
+Categories=Graphics
 MimeType=image/bmp;image/gif;image/jpeg;image/jpg;image/pjpeg;image/png;image/x-bmp;image/x-png;
