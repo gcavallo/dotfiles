@@ -6,3 +6,5 @@
 	default = simple
 [color]
 	ui = auto
+[alias]
+	tree = log --graph --decorate --pretty=oneline --abbrev-commit
