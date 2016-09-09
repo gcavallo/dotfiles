@@ -57,12 +57,6 @@ task_urgent_background_id = 2
 task_iconified_background_id = 3
 task_tooltip = 0
 
-# Task Icons
-task_icon_asb = 70 0 0
-task_active_icon_asb = 100 0 0
-task_urgent_icon_asb = 100 0 0
-task_iconified_icon_asb = 70 0 0
-
 # Fonts
 task_font = 'Droid Sans' 9
 task_font_color = #c3c9d9 100
@@ -72,12 +66,11 @@ task_iconified_font_color = #c3c9d9 100
 font_shadow = 0
 
 # System Tray
-systray = 0
-#systray_padding = 0 4 5
+systray = 1
+systray_padding = 2 2 2
 #systray_sort = ascending
-#systray_background_id = 0
-#systray_icon_size = 16
-#systray_icon_asb = 70 0 0
+systray_background_id = 0
+systray_icon_size = 18
 
 # Clock
 time1_format = %H:%M
@@ -94,7 +87,7 @@ tooltip_show_timeout = 0.7
 tooltip_hide_timeout = 0.3
 tooltip_background_id = 1
 tooltip_font = 'Droid Sans Mono' 9
-tooltip_font_color = #c3c9d9
+tooltip_font_color = #c3c9d9 100
 
 # Mouse
 mouse_middle = none
