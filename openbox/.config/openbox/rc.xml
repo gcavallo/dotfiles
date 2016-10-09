@@ -287,9 +287,9 @@
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>Firefox</name>
+          <name>Chromium</name>
         </startupnotify>
-        <command>firefox</command>
+        <command>chromium</command>
       </action>
     </keybind>
     <keybind key="W-e">
@@ -309,8 +309,8 @@
     </keybind>
     <keybind key="W-t">
       <action name="Execute">
-        <name>dmenu</name>
-        <command>urxvt</command>
+        <name>Sakura</name>
+        <command>sakura</command>
       </action>
     </keybind>
     <!-- Keybindings for volume control -->

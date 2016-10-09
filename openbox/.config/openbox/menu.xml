@@ -11,7 +11,7 @@
     <action name="Execute"><execute>sakura</execute></action>
   </item>
   <item label="File Manager">
-    <action name="Execute"><execute>dolphin</execute></action>
+    <action name="Execute"><execute>pcmanfm</execute></action>
   </item>
   <menu id="web" label="Web Browsers">
     <item label="Chromium">
