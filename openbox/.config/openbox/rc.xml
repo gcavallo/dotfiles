@@ -34,37 +34,37 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>Droid Sans</name>
+      <name>Noto Sans</name>
       <size>8</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveWindow">
-      <name>Droid Sans</name>
+      <name>Noto Sans</name>
       <size>8</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="MenuHeader">
-      <name>Droid Sans</name>
+      <name>Noto Sans</name>
       <size>9</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="MenuItem">
-      <name>Droid Sans</name>
+      <name>Noto Sans</name>
       <size>9</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>Droid Sans</name>
+      <name>Noto Sans</name>
       <size>9</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>Droid Sans</name>
+      <name>Noto Sans</name>
       <size>9</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
@@ -257,6 +257,27 @@
     </keybind>
     <keybind key="W-Up">
       <action name="Maximize"/>
+    </keybind>
+    <!-- Keybindings for screen rotation -->
+    <keybind key="W-A-Up">
+      <action name="Execute">
+        <command>xrandr -o normal</command>
+      </action>
+    </keybind>
+    <keybind key="W-A-Down">
+      <action name="Execute">
+        <command>xrandr -o inverted</command>
+      </action>
+    </keybind>
+    <keybind key="W-A-Left">
+      <action name="Execute">
+        <command>xrandr -o left</command>
+      </action>
+    </keybind>
+    <keybind key="W-A-Right">
+      <action name="Execute">
+        <command>xrandr -o right</command>
+      </action>
     </keybind>
     <!-- Keybindings for running applications -->
     <keybind key="W-q">
