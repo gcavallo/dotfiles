@@ -58,7 +58,7 @@ task_iconified_background_id = 3
 task_tooltip = 0
 
 # Fonts
-task_font = 'Droid Sans' 9
+task_font = 'Noto Sans' 9
 task_font_color = #c3c9d9 100
 task_active_font_color = #c3c9d9 100
 task_urgent_font_color = #ffffff 100
@@ -74,19 +74,18 @@ systray_icon_size = 18
 
 # Clock
 time1_format = %H:%M
-time1_font = 'Droid Sans' 9
+time1_font = 'Noto Sans' 9
 clock_font_color = #c3c9d9 100
 clock_tooltip = %A %B %d
 clock_padding = 0 0
 clock_background_id = 1
-clock_rclick_command = orage
 
 # Tooltips
 tooltip_padding = 2 2
 tooltip_show_timeout = 0.7
 tooltip_hide_timeout = 0.3
 tooltip_background_id = 1
-tooltip_font = 'Droid Sans Mono' 9
+tooltip_font = 'DejaVu Sans Mono' 9
 tooltip_font_color = #c3c9d9 100
 
 # Mouse
