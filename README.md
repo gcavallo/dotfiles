@@ -7,9 +7,12 @@ Configured packages
 -------------------
 
 * bash
+* compton
+* conky
 * feh
 * fontconfig
 * git
+* gtk
 * mpv
 * openbox
 * pacaur
