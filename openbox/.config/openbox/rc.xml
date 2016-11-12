@@ -316,17 +316,17 @@
     <!-- Keybindings for volume control -->
     <keybind key="W-Prior">
       <action name="Execute">
-        <command>pactl set-sink-volume 0 +10%</command>
+        <command>pa_vol-notify -i</command>
       </action>
     </keybind>
     <keybind key="W-Next">
       <action name="Execute">
-        <command>pactl set-sink-volume 0 -10%</command>
+        <command>pa_vol-notify -d</command>
       </action>
     </keybind>
     <keybind key="W-End">
       <action name="Execute">
-        <command>pactl set-sink-mute 0 toggle</command>
+        <command>pa_vol-notify -t</command>
       </action>
     </keybind>
   </keyboard>
