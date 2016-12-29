@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
+update-mime-database ~/.local/share/mime &
 tint2 &
 conky 2>/dev/null &
-/usr/lib/notification-daemon-1.0/notification-daemon &
-pcmanfm -d &
+/usr/lib/notify-osd-customizable/notify-osd &
 killall dropbox &
 (sleep 15s && dropbox) &
-keepassx &
-linphone &

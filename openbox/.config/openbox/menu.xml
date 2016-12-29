@@ -11,7 +11,7 @@
     <action name="Execute"><execute>sakura</execute></action>
   </item>
   <item label="File Manager">
-    <action name="Execute"><execute>pcmanfm</execute></action>
+    <action name="Execute"><execute>dolphin</execute></action>
   </item>
   <menu id="web" label="Web Browsers">
     <item label="Chromium">
@@ -25,10 +25,10 @@
     <action name="Execute"><execute>thunderbird</execute></action>
   </item>
   <item label="Instant Messenger">
-    <action name="Execute"><execute>pidgin</execute></action>
+    <action name="Execute"><execute>gajim</execute></action>
   </item>
   <item label="Music Player">
-    <action name="Execute"><execute>quodlibet</execute></action>
+    <action name="Execute"><execute>banshee</execute></action>
   </item>
   <item label="BitTorrent Client">
     <action name="Execute"><execute>qbittorrent</execute></action>
@@ -55,9 +55,6 @@
       <action name="Execute"><execute>steam</execute></action>
     </item>
   </menu>
-  <item label="Softphone">
-    <action name="Execute"><execute>linphone</execute></action>
-  </item>
   <item label="Password Manager">
     <action name="Execute"><execute>keepassx</execute></action>
   </item>
