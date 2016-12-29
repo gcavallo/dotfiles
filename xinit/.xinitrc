@@ -1,4 +1,12 @@
+#!/usr/bin/env bash
+
 ~/.fehbg &
 nvidia-settings --load-config-only
 compton --config ~/.config/compton.conf &
+xbindkeys &
+
+if [ -x /usr/bin/gpg-agent ]; then
+	eval "$(/usr/bin/gpg-agent --daemon)"
+fi
+
 exec openbox-session
