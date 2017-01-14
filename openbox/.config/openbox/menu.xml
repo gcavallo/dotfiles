@@ -51,6 +51,9 @@
     </item>
   </menu>
   <menu id="games" label="Games">
+    <item label="Discord">
+      <action name="Execute"><execute>discord-canary</execute></action>
+    </item>
     <item label="Steam">
       <action name="Execute"><execute>steam</execute></action>
     </item>
