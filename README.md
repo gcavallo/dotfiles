@@ -21,7 +21,7 @@ Configured packages
 * sxiv
 * tint2
 * vim
-* xinit
+* xprofile
 
 Install
 -------
