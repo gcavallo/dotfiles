@@ -17,7 +17,6 @@ alias sudo='sudo '
 alias vi='vim'
 alias lsblk='lsblk -o NAME,TYPE,KNAME,FSTYPE,MOUNTPOINT,LABEL,UUID,OWNER,GROUP,MODE,TYPE,SIZE'
 alias 7zp="7za a -t7z -m0=lzma2 -mx=9 -mhe=on -p"
-alias killff="killall ffxivlauncher.exe"
 alias mutt="mutt -F $HOME/.config/mutt/muttrc"
 alias xfce4-terminal="xfce4-terminal --tab"
 
@@ -46,30 +45,20 @@ backup () {
 	done
 }
 
+reflac () {
+	# Optimize flac files and remove id3
+	while [ $# -ne 0 ]; do
+		id3v2 --delete-all "$1"
+		flac "$1" --best -f -o "$1"
+		shift
+	done
+}
+
 v2gif () {
 	# Encode video to animated gif
-	fps=10 # gif frames per second
-	ffmpeg -v warning -i "$1" -vf "fps=$fps,palettegen" -y /tmp/palette.png
-	ffmpeg -v warning -i "$1" -i /tmp/palette.png -lavfi "$fps [x]; [x][1:v] paletteuse" -y "$2"
-}
-
-v2hevc () {
-	# Encode video to h265 stream
-	crop=$((140 * 2)) # height crop (top + bottom)
-	profile="main10"  # x265 profile
-	preset="medium"   # x265 preset
-	crf=18            # x265 constant rate factor
-	ffmpeg -i "$1" -vf "crop=iw:ih-$crop" -f yuv4mpegpipe - | \
-	x265 - --no-progress --y4m --preset $preset --profile $profile --crf $crf "$2" --tune grain
-}
-
-v2avc () {
-	# Encode video to h264 stream
-	crop=$((140 * 2)) # height crop (top + bottom)
-	preset="veryslow" # x264 preset
-	crf=19            # x264 constant rate factor
-	ffmpeg -i "$1" -vf "crop=iw:ih-$crop" -c:v libx264 \
-	-preset $preset -profile:v high -level 4.2 -crf $crf "$2" #--tune
+	ffmpeg -v warning -i "$2" -vf "fps=$1,palettegen" -y /tmp/palette.png
+	ffmpeg -v warning -i "$2" -i /tmp/palette.png -lavfi "$1 [x]; [x][1:v] paletteuse" -y "$3"
+	rm /tmp/palette.png
 }
 
 v2psp () {
@@ -82,16 +71,6 @@ v2psp () {
 		--vb 512 --two-pass \
 		--subtitle "1" --subtitle-burned \
 		--aencoder aac --ab 128 --arate 48
-}
-
-a2aac () {
-	# Encode audio to AAC
-	ffmpeg -i "$1" -c:a libfdk_aac -b:a 192k "$2"
-}
-
-a2flac () {
-	# Encode audio to AAC
-	ffmpeg -i "$1" -c:a flac -compression_level 12 "$2"
 }
 
 brc () {
