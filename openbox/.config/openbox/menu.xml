@@ -90,7 +90,6 @@
 		<action name="Reconfigure" />
 	</item>
 	<item label="Exit">
-		<prompt>Exit session?</prompt>
 		<action name="Exit" />
 	</item>
 
