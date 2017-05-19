@@ -19,6 +19,7 @@ alias lsblk='lsblk -o NAME,TYPE,KNAME,FSTYPE,MOUNTPOINT,LABEL,UUID,OWNER,GROUP,M
 alias 7zp="7za a -t7z -m0=lzma2 -mx=9 -mhe=on -p"
 alias mutt="mutt -F $HOME/.config/mutt/muttrc"
 alias konsole='konsole --new-tab'
+alias chromium='XDG_CURRENT_DESKTOP="KDE" chromium'
 
 colors () {
 	# Echo a line of terminal colors
