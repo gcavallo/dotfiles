@@ -32,22 +32,22 @@ case "$TERM" in
 		;;
 	linux)
 		/bin/echo -e "
-		\e]P02f1e2e
-		\e]P1ef6155
-		\e]P248b685
-		\e]P3fec418
-		\e]P406b6ef
-		\e]P5815ba4
-		\e]P65bc4bf
-		\e]P7a39e9b
-		\e]P8776e71
-		\e]P9ef6155
-		\e]PA48b685
-		\e]PBfec418
-		\e]PC06b6ef
-		\e]PD815ba4
-		\e]PE5bc4bf
-		\e]PFe7e9db
+		\e]P02d2d2d
+		\e]P1f2777a
+		\e]P299cc99
+		\e]P3ffcc66
+		\e]P46699cc
+		\e]P5cc99cc
+		\e]P666cccc
+		\e]P7d3d0c8
+		\e]P8747369
+		\e]P9f2777a
+		\e]PA99cc99
+		\e]PBffcc66
+		\e]PC6699cc
+		\e]PDcc99cc
+		\e]PE66cccc
+		\e]PFf2f0ec
 		"
 		clear
 		;;
