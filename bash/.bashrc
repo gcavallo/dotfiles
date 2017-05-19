@@ -18,16 +18,13 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-	PS1='\[\e[01;32m\]\u\[\e[01;30m\]@\[\e[01;33m\]\h\[\e[01;30m\]\[\e[00m\]\n\[\e[01;34m\]\w\[\e[01;30m\]\$\[\e[00m\] '
+	PS1='\[\e[32m\]\u\[\e[90m\]@\[\e[33m\]\h\[\e[30m\]\[\e[00m\]\n\[\e[34m\]\w\[\e[30m\]\$\[\e[00m\] '
 else
 	PS1='\u@\h:\w\$ '
 fi
 unset color_prompt force_color_prompt
 
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
-
-BASE16_SHELL="$HOME/.config/base16-shell/base16-ocean.dark.sh"
-[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 case "$TERM" in
 	xterm*|rxvt*)

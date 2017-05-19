@@ -18,7 +18,7 @@ alias vi='vim'
 alias lsblk='lsblk -o NAME,TYPE,KNAME,FSTYPE,MOUNTPOINT,LABEL,UUID,OWNER,GROUP,MODE,TYPE,SIZE'
 alias 7zp="7za a -t7z -m0=lzma2 -mx=9 -mhe=on -p"
 alias mutt="mutt -F $HOME/.config/mutt/muttrc"
-alias xfce4-terminal="xfce4-terminal --tab"
+alias konsole='konsole --new-tab'
 
 colors () {
 	# Echo a line of terminal colors
