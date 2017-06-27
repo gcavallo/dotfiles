@@ -1,13 +1,13 @@
 " No rice, no life
 set encoding=utf8
 set t_Co=256
+let base16colorspace=256
 syntax on
 set background=dark
 colorscheme base16-ocean
-highlight Normal ctermbg=NONE
-highlight nonText ctermbg=NONE
+let g:airline_theme='base16_shell'
 
-augroup HiglightTODO
+augroup HighlightTODO
 	autocmd!
 	autocmd WinEnter,VimEnter * :silent! call matchadd('Todo', 'TODO\|FIXME\|XXX', -1)
 augroup END
