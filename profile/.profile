@@ -26,6 +26,3 @@ export WINEPREFIX="$HOME/Windows"
 
 # JRE
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true'
-
-# X at login
-[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
