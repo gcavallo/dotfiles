@@ -1,24 +1,30 @@
 # Tint2 config file
 # For information on manually configuring tint2 see http://code.google.com/p/tint2/wiki/Configure
 
-# Background definitions
-# ID 1
+# ID 1 (panel)
 rounded = 0
 border_width = 0
-background_color = #131926 100
-border_color = #131926 100
+background_color = #2f343f 100
+border_color = #2f343f 100
 
-# ID 2
+# ID 2 (selection)
 rounded = 0
-border_width = 3
+border_width = 10
+border_sides = R
+background_color = #4084d6 100
+border_color = #2f343f 100
+
+# ID 3 (task)
+rounded = 0
+border_width = 10
+border_sides = R
+background_color = #404552 100
+border_color = #2f343f 100
+
+# ID 4 (clock)
+rounded = 0
 background_color = #404552 100
 border_color = #404552 100
-
-# ID 3
-rounded = 0
-border_width = 3
-background_color = #131926 0
-border_color = #131926 0
 
 # Panel
 panel_monitor = all
@@ -46,11 +52,11 @@ taskbar_active_background_id = 0
 
 # Tasks
 urgent_nb_of_blink = 5
-task_icon = 0
+task_icon = 1
 task_text = 1
 task_centered = 0
 task_maximum_size = 160 24
-task_padding = 6 2
+task_padding = 8 2
 task_background_id = 3
 task_active_background_id = 2
 task_urgent_background_id = 2
@@ -58,9 +64,9 @@ task_iconified_background_id = 3
 task_tooltip = 0
 
 # Fonts
-task_font = 'Noto Sans' 9
+task_font = NotoSans Bold 8
 task_font_color = #c3c9d9 100
-task_active_font_color = #c3c9d9 100
+task_active_font_color = #ffffff 100
 task_urgent_font_color = #ffffff 100
 task_iconified_font_color = #c3c9d9 100
 font_shadow = 0
@@ -73,24 +79,23 @@ systray_background_id = 0
 systray_icon_size = 18
 
 # Clock
-time1_format = %H:%M
-time1_font = 'Noto Sans' 9
+time1_format = %A %d %B %H:%M
+time1_font = NotoSans Bold 8
 clock_font_color = #c3c9d9 100
-clock_tooltip = %A %B %d
-clock_padding = 0 0
-clock_background_id = 1
+clock_padding = 8 0
+clock_background_id = 4
 
 # Tooltips
 tooltip_padding = 2 2
 tooltip_show_timeout = 0.7
 tooltip_hide_timeout = 0.3
 tooltip_background_id = 1
-tooltip_font = 'DejaVu Sans Mono' 9
+tooltip_font = NotoSans Bold 8
 tooltip_font_color = #c3c9d9 100
 
 # Mouse
 mouse_middle = none
-mouse_right = close
+mouse_right = none
 mouse_scroll_up = toggle
 mouse_scroll_down = iconify
 
