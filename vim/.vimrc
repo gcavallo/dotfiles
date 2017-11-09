@@ -16,6 +16,7 @@ augroup END
 set number!
 set nocursorline
 set list!
+nmap <C-I> :set list!<CR>
 set showbreak=>\
 set showtabline=0
 
@@ -25,7 +26,11 @@ set tabstop=4
 
 " Use mouse and primary clipboard
 set mouse=a
-vmap <C-C> "+y
+vmap <C-c> "+y
+nmap <C-c> "+yy
+vmap <C-v> "+p
+nmap <C-v> "+p
+imap <C-v> <Esc>"+p
 
 " Set path to current directory recursively
 set path=$PWD/**
