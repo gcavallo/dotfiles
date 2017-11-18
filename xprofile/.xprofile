@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-~/.fehbg &
-nvidia-settings --load-config-only
-compton --config ~/.config/compton.conf &
-xbindkeys &
