@@ -14,11 +14,13 @@ fi
 alias la='ls -a'
 alias ll='ls -alh'
 alias sudo='sudo '
+alias se='sudoedit'
 alias vi='vim'
+alias vd='vimdiff'
+alias fm='ranger'
 alias lsblk='lsblk -o NAME,TYPE,KNAME,FSTYPE,MOUNTPOINT,LABEL,UUID,OWNER,GROUP,MODE,TYPE,SIZE'
 alias 7zp="7za a -t7z -m0=lzma2 -mx=9 -mhe=on -p"
-alias mutt="mutt -F $HOME/.config/mutt/muttrc"
-alias konsole='konsole --new-tab'
+alias backup='rsync -aXv --delete --exclude-from="${HOME}/exclude.txt" ${HOME}/ nitori:/mnt/data/${USER}'
 
 colors () {
 	# Echo a line of terminal colors
@@ -36,13 +38,6 @@ serversslfp () {
 	openssl s_client -connect "$1" < /dev/null 2>/dev/null | openssl x509 -fingerprint -sha1 -noout -in /dev/stdin
 	sleep 1
 	openssl s_client -connect "$1" < /dev/null 2>/dev/null | openssl x509 -fingerprint -sha256 -noout -in /dev/stdin
-}
-
-backup () {
-	# Backup given directories to /mnt/backup
-	for dir in "$@"; do
-		rsync -aXv --delete --delete-excluded --exclude-from="/etc/rsync-excludes.txt" "$(realpath "$dir")" /mnt/backup
-	done
 }
 
 reflac () {
@@ -71,6 +66,11 @@ v2psp () {
 		--vb 512 --two-pass \
 		--subtitle "1" --subtitle-burned \
 		--aencoder aac --ab 128 --arate 48
+}
+
+v2frame () {
+	# Add frame around video
+	fmpeg -i "$2" -i "$1" -filter_complex "overlay='x=50:y=50:shortest=1'" -preset veryslow -crf 12 $2
 }
 
 brc () {
