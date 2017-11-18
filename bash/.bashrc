@@ -29,10 +29,6 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 case "$TERM" in
 	xterm*|rxvt*)
 		PS1="\e]0;\h\a$PS1"
-		# BASE16 Ocean
-		BASE16_SHELL=$HOME/.config/base16-shell/
-		[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
-		;;
 	linux)
 		# BASE16 Eighties
 		/bin/echo -e "
