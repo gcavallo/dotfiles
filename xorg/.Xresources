@@ -6,7 +6,7 @@ Xft.hinting: true
 Xft.antialias: true
 Xft.rgba: rgb
 
-URxvt.font: xft:DejaVu\ Sans\ Mono:size=9
+URxvt.font: xft:DejaVu Sans Mono:size=9,xft:IPAPGothic,xft:Baekmuk Gulim
 URxvt.letterSpace: -1
 URxvt.urlLauncher: /usr/bin/firefox
 URxvt.matcher.button: 1
